@@ -19,3 +19,56 @@ Filter sehingga wireshark hanya mengambil paket yang berasal dari ip kalian
 
 ### NO5
 Filter sehingga wireshark hanya mengambil paket yang tujuannya ke monta.if.its.ac.id
+
+<br />
+
+## Display Filter
+### NO1
+Tampilkan semua paket yang hostnya mengandung www.ne.its.ac.id
+
+### NO2
+Tampilkan paket yang hanya berasal dari IP 10.151.36 81 dan menuju web "mb.its.ac.id"
+
+### NO3
+Simpan gambar ckedokteran.png
+
+### NO4
+Cari charset dari halaman "ajk.if.its.ac.id"
+
+### NO5
+Cari username dan password ketika login di "freeshare.lp.if.its ac.id"
+
+### NO6
+Sebutkan web server yang digunakan pada "www.ne.its.ac.id"
+
+### NO7
+Sebutkan versi PHP dan yang digunakan pada "riset.ajk.if.its.ac.id"
+
+### NO8
+Filter pada wireshark kalian sehingga menampilkan hasil ping
+
+### NO9
+Dapatkan semua metode GET yang mengakses "monta.if.its.ac.id"
+
+### NO10
+Tunjukkan username dan password yang dimasukkan ketika login FTP
+
+### NO11
+Tunjukkan di wireshark, paket mana yang dikirimkan FTP client ketika upload file 
+
+### NO12
+Tunjukkan di wireshark, paket mana yang dikirimkan FTP client ketika menghapus file 
+
+### NO13
+Tunjukkan di wireshark, paket mana yang dikirimkan FTP client ketika mengganti nama file "sutlin.png"
+
+### NO14
+Tunjukkan di wireshark, paket mana yang dikirimkan FTP client ketika download file "sutlun.png"
+
+### NO15
+Cari file .zip di wireshark lalu download dan extract file tersebut 
+                                clue: "50 4B 03 04"
+
+
+
+
