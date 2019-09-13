@@ -1,5 +1,4 @@
-# Jarkom_modul1_A02
-Laporan Praktikum Jaringan Komputer 2019 oleh grup A02.
+# Laporan Praktikum Modul 1 Jaringan Komputer 2019
 
 ### Oleh:
 - Donny Fitrado (05111740000171)
