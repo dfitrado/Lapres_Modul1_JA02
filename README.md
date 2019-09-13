@@ -1,4 +1,4 @@
-# Laporan Praktikum Modul 1 Jaringan Komputer 2019
+# Laporan Praktikum Modul 1 Jarkom 2019
 
 ### Oleh:
 - Donny Fitrado (05111740000171)
