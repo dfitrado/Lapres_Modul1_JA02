@@ -206,6 +206,3 @@ ftp-data
 
 <br />
 Terima kasih dan mohon maaf apabila ada kesalahan.
-
-
-
