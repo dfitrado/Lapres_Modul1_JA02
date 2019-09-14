@@ -7,18 +7,38 @@
 ## Capture Filter
 ### NO1
 Filter sehingga wireshark hanya mengambil paket yang mengandung port 21
+#### Jawab:
+```
+port 21
+```
 
 ### NO2
 Filter sehingga wireshark hanya mengambil paket yang berasal dari port 80 (ajk.if.its.ac.id)
+#### Jawab:
+```
+src port 80 && host ajk.if.its.ac.id
+```
 
 ### NO3
 Filter sehingga wireshark hanya menampilkan paket yang menuju port 443 (google.com)
+#### Jawab:
+````
+dst port 443 && host google.com
+````
 
 ### NO4
 Filter sehingga wireshark hanya mengambil paket yang berasal dari ip kalian
+#### Jawab:
+```
+src ip <ip kalian>
+```
 
 ### NO5
 Filter sehingga wireshark hanya mengambil paket yang tujuannya ke monta.if.its.ac.id
+#### Jawab:
+````
+dst host monta.if.its.ac.id
+````
 
 <br />
 
