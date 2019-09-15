@@ -19,6 +19,7 @@ Filter sehingga wireshark hanya mengambil paket yang berasal dari port 80 (ajk.i
 src port 80 && host ajk.if.its.ac.id
 ```
 ##### Screenshot:
+Untuk mencari paket yang berasal dari port 80 yaitu ajk.if.its.ac.id, kita dapat menggabungkan command ``src port`` dengan ``host``. Dengan itu, kita bisa mencari lebih detail mengenai port spesifik yaitu port 80(ajk.if.its.ac.id).
 <img src="Capture%20Filter/no2.png" width="600">
 
 ### NO3
@@ -28,15 +29,19 @@ Filter sehingga wireshark hanya menampilkan paket yang menuju port 443 (google.c
 dst port 443 && host google.com
 ````
 ##### Screenshot:
+Untuk mencari paket yang menuju port 443 yaitu google.com, kita dapat menggabungkan command ``dst port`` dengan ``host``. Dengan itu, kita bisa mencari lebih detail mengenai port spesifik yaitu port 443(google.com).
 <img src="Capture%20Filter/no3.png" width="600">
 
 ### NO4
 Filter sehingga wireshark hanya mengambil paket yang berasal dari ip kalian
 #### Jawab:
+Buka cmd kemudian ketik ``ipconfig``. Lalu kita baru mendapat ip kita.
+Setelah mendapatkan ip, kita dapat mengetik seperti di bawah ini:
 ```
 src ip <ip kalian>
 ```
 ##### Screenshot:
+Untuk mencari paket yang berasal ip kita, kita dapat menggunakan ``src host`` yang berarti host asal (src).
 <img src="Capture%20Filter/no4.png" width="600">
 
 ### NO5
@@ -46,6 +51,7 @@ Filter sehingga wireshark hanya mengambil paket yang tujuannya ke monta.if.its.a
 dst host monta.if.its.ac.id
 ````
 ##### Screenshot:
+Untuk mencari paket yang bertujuan ke monta.if.its.ac.id, kita dapat menggunakan ``dst host`` yang berarti host tujuan (dst).
 <img src="Capture%20Filter/no5.png" width="600">
 
 <br />
@@ -58,6 +64,7 @@ Tampilkan semua paket yang hostnya mengandung www.ne.its.ac.id
 http.host == ne.its.ac.id
 ```
 #### Screenshot:
+Semua paket yang muncul hostnya mengandung ne.its.ac.id seperti di bawah ini:
 <img src="Display%20Filter/no1.png" width="600">
 
 ### NO2
@@ -67,6 +74,7 @@ Tampilkan paket yang hanya berasal dari IP 10.151.36 81 dan menuju web "mb.its.a
 ip.src == 10.151.36.81 && http.host == "mb.its.ac.id"
 ```
 #### Screenshot:
+Bisa dilihat di bawah ini bahwa semua IP source-nya sama, dan begitu pula dengan IP destination-nya.  
 <img src="Display%20Filter/no2.png" width="600">
 
 
@@ -102,7 +110,8 @@ Sebutkan web server yang digunakan pada "www.ne.its.ac.id"
 ```
 http.host == ne.its.ac.id
 ```
-kemudian, follow TCP stream
+Kemudian, follow TCP stream.
+Akan muncul servernya, yaitu Apache/2.4.10 dalam kasus soal ini.
 
 #### Screenshot:
 <img src="Display%20Filter/no6.png" width="600">
@@ -113,7 +122,8 @@ Sebutkan versi PHP dan yang digunakan pada "riset.ajk.if.its.ac.id"
 ```
 http.host == riset.ajk.if.its.ac.id
 ```
-kemudian, follow TCP stream.
+Kemudian, follow TCP stream.
+Akan muncul versi PHPnya, yaitu PHP/5.5.9-1ubuntu4.26 dalam soal ini.
 
 #### Screenshot:
 <img src="Display%20Filter/no7.png" width="600">
@@ -126,6 +136,7 @@ icmp
 ```
 
 #### Screenshot:
+Pada gambar di bawah, terlihat bahwa adanya request yang terjadi.
 <img src="Display%20Filter/no8.png" width="600">
 
 ### NO9
@@ -146,6 +157,7 @@ ftp.request.command == USER || ftp.request.command == PASS
 ```
 
 #### Screenshot:
+Seperti gambar di bawah ini, kita hanya perlu mencari PASS dan USER dalam packet-packet yang diterima.
 <img src="Display%20Filter/no10.png" width="600">
 
 ### NO11
@@ -156,6 +168,7 @@ ftp.request.command == STOR && ftp.request.arg == qwpeaspojdasjfpasjfpaosuhuy.jp
 ```
 
 #### Screenshot:
+Kita hanya perlu mencari command "STOR" yang berarti proses upload sebuah file, seperti gambar di atas ini.
 <img src="Display%20Filter/no11.png" width="600">
 
 ### NO12
@@ -178,6 +191,7 @@ ftp.request.command == RNFR && ftp.request.arg == sutlin.png
 ```
 
 #### Screenshot:
+Dalam mengganti nama file, commandnya adalah "RNFR". Maka, kita mencari command itu dalam packet yang tersedia.
 <img src="Display%20Filter/no13.png" width="600">
 
 ### NO14
@@ -188,6 +202,7 @@ ftp.request.command == RETR && ftp.request.arg == sutlun.png
 ```
 
 #### Screenshot:
+Command untuk mendownload file sutlun.png adalah "RETR", oleh karena itu kita mencari command itu, dengan menggunakan ``ftp.request.command``.
 <img src="Display%20Filter/no14.png" width="600">
 
 ### NO15
