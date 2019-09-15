@@ -1,4 +1,4 @@
-# Laporan Praktikum Modul 1 Jarkom 2019
+# Lapres Modul 1 Jarkom A02 2019
 
 ### Oleh:
 - Donny Fitrado (05111740000171)
@@ -11,7 +11,6 @@ Filter sehingga wireshark hanya mengambil paket yang mengandung port 21
 ```
 port 21
 ```
-##### Screenshot:
 
 ### NO2
 Filter sehingga wireshark hanya mengambil paket yang berasal dari port 80 (ajk.if.its.ac.id)
@@ -20,6 +19,7 @@ Filter sehingga wireshark hanya mengambil paket yang berasal dari port 80 (ajk.i
 src port 80 && host ajk.if.its.ac.id
 ```
 ##### Screenshot:
+<img src="Capture%20Filter/no2.png" width="600">
 
 ### NO3
 Filter sehingga wireshark hanya menampilkan paket yang menuju port 443 (google.com)
@@ -28,6 +28,7 @@ Filter sehingga wireshark hanya menampilkan paket yang menuju port 443 (google.c
 dst port 443 && host google.com
 ````
 ##### Screenshot:
+<img src="Capture%20Filter/no3.png" width="600">
 
 ### NO4
 Filter sehingga wireshark hanya mengambil paket yang berasal dari ip kalian
@@ -36,6 +37,7 @@ Filter sehingga wireshark hanya mengambil paket yang berasal dari ip kalian
 src ip <ip kalian>
 ```
 ##### Screenshot:
+<img src="Capture%20Filter/no4.png" width="600">
 
 ### NO5
 Filter sehingga wireshark hanya mengambil paket yang tujuannya ke monta.if.its.ac.id
@@ -44,6 +46,7 @@ Filter sehingga wireshark hanya mengambil paket yang tujuannya ke monta.if.its.a
 dst host monta.if.its.ac.id
 ````
 ##### Screenshot:
+<img src="Capture%20Filter/no5.png" width="600">
 
 <br />
 
@@ -81,6 +84,7 @@ Cari charset dari halaman "ajk.if.its.ac.id"
 Charset tidak muncul pada saat follow TCP stream.
 
 #### Screenshot:
+Tidak ada.
 
 ### NO5
 Cari username dan password ketika login di "freeshare.lp.if.its ac.id"
@@ -90,6 +94,7 @@ http.host == freeshare.lp.if.its.ac.id && frame contains login
 ```
 
 #### Screenshot:
+<img src="Display%20Filter/no5.png" width="600">
 
 ### NO6
 Sebutkan web server yang digunakan pada "www.ne.its.ac.id"
